@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .card{
+            height: 400px;
+            width: 400px;
+            border: 4px black solid;
+            margin:auto;
+            margin-top: 60px;
+            background-color: chocolate;     
+        }
+
+        .aaaa{
+            display: flex;
+        }
+
+        .aaa
+        {
+            margin: 10px;
+            display: flex;
+        }
+
+        #hey{
+            margin-left: 75px;
+        }
+
+        button{
+            margin-left: 100px;
+            margin-top: 60px;
+            height: 50px;
+            width: 50px;
+            border: 3px black solid;
+            font-size: 30px;
+
+        }
+
+      #fun{
+        border: 3px black solid;
+        height: 45px;
+        width: 45px;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        
+      }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+    <div class="aaaa">
+
+        <div class="aaa">
+            <img src="https://imgs.search.brave.com/r8VINa9gNywdmH5vKjVOc-b_QTSnspDNKn2lp4JkgAU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0MvY291bnRl/ci1zZXJ2aWNlLWxv/Z28tNjYyMjU5RDM1/Qi1zZWVrbG9nby5j/b20ucG5n" alt="Counter app" height="55px" width="50px">
+        </div>
+
+        <div id="hey" class="aaa"><p>Counter App</p></div>
+
+        </div>
+         <div>
+        <p id="fun"></p>
+    </div>
+        
+        <div id="but">
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+        </div>
+
+    
+
+   
+
+    </div>
+
+    <script>
+        var a=0;
+        document.getElementById("fun").innerHTML=a;
+
+        function add()
+        {
+            if(a<10)
+        {
+           
+            a=a+1;
+             document.getElementById("fun").innerHTML=a;
+
+        }
+        else{
+            alert("Max Value")
+        }
+        }
+
+        function sub()
+        {
+            if(a>0)
+        {
+            a=a-1;
+            document.getElementById("fun").innerHTML=a;
+            
+        }
+        else{
+            alert("Min Value")
+        }
+        }
+    </script>
+
+    
+</body>
+</html>
