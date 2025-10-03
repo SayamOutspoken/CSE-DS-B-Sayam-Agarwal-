@@ -4,10 +4,24 @@
 </head>
 <body>
     <script>
-        const a1=[1,2,3,4];
-        const a2=[6,8,9,11];
-        const r=[...a1,...a2];
-        document.write(r);
+        const college={
+            collegename:"ABES",
+            collegecode:32,
+            collegelocation:"GZB"
+        }
+
+        const student={
+            studentname:"sohan",
+            studentrollno:1234,
+            studentclass:"B.tech"
+        }
+
+        const det={...college,...student};
+        document.write(det);
+        // const a1=[1,2,3,4];
+        // const a2=[6,8,9,11];
+        // const r=[...a1,...a2];
+        // document.write(r);
     </script>
     
 </body>
