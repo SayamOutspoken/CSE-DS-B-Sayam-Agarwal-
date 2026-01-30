@@ -4,20 +4,56 @@
 </head>
 <body>
     <script>
-        const college={
-            collegename:"ABES",
-            collegecode:32,
-            collegelocation:"GZB"
+        const book1={
+            bookname:"c++",
+            bookauthor:"abc",
+            publication:1568
         }
 
-        const student={
-            studentname:"sohan",
-            studentrollno:1234,
-            studentclass:"B.tech"
+        const book2={
+            bookname:"java",
+            bookauthor:"pqr",
+            publication:123
         }
 
-        const det={...college,...student};
-        document.write(det);
+        const book3={
+            bookname:"r",
+            bookauthor:"ere",
+            publication:96
+        }
+
+        const book4={
+            bookname:"chash",
+            bookauthor:"ijn",
+            publication:852
+        }
+
+        const book5={
+            bookname:"python",
+            bookauthor:"plmnhi",
+            publication:8547
+        }
+
+        const rr=[{...book1},{...book2},{...book3},{...book4},{...book5}];
+        document.write(JSON.stringify(rr));
+
+        
+        
+        
+        // const college={
+        //     collegename:"ABES",
+        //     collegecode:32,
+        //     collegelocation:"GZB"
+        // }
+
+        // const student={
+        //     studentname:"sohan",
+        //     studentrollno:1234,
+        //     studentclass:"B.tech"
+        // }
+
+        // const det={...college,...student};
+        // document.write(det);
         // const a1=[1,2,3,4];
         // const a2=[6,8,9,11];
         // const r=[...a1,...a2];
